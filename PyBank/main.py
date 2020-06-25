@@ -1,148 +1,57 @@
 import os
 import csv
 
-
+#import file and evaluate data
 csvpath = os.path.join("Resources", "budget_data.csv")
 with open(csvpath, newline='') as f:
-    #with open(csvpath) as csvfile:
+   
   
     csvreader = csv.reader(f,delimiter =',')
-    #csvreader = csv.reader(file, delimiter=",")
-    #print(csvreader)
     csvheader = next(csvreader)
-    Lines = len(list(csvreader))
-    print("Total Months: ", Lines)
-    #csv_header = next(csvfile)
-    #print(f"Header: {csv_header}")
+    
     total = 0
+    total_months = 0
     
-    #for row in csvreader:
-     #   total = sum(int(row[1])
-    #print(total)
-
+    month = []
+    net_change_list = []
+    greatest_increase = ["",0]
+    greatest_decrease = ["", 9999999999999]
     
-
-    #csvreader = reader(read_obj)
-    
-    #print(csvreader)
-    #csvreader = csv.DictReader(f)
-    #csvheader = next(csvreader)
-
-    #profit = []
-    #month = []
-    
-    #total = 0
-
-            # Read through each row of data sum of profit / Losses 
-    #for row in csvreader:
-
-
-    #print(f"csv Header: {header}")
-    
-##columns1 = index(Total_Profit/Losses)
-    
-    #for row in csvreader:
-        #total += int(row[1])
-        #total = sum(float(row[1]) for row in csvreader)
-        #total += (int(row[1])) 
-        #total += float(row[column[1]])
-        #total = sum(int(row[1]) for row in csvreader)
-    
-        #profit.append(row[1])
-        #month.append(row[0])
-        #total = sum(int(profit))
-        #total = sum(int(row[1]))
-                #total += int(row[1])
-        
-        #totals = totals + int(row[1])
-        #total = sum([float(row[1]) for row in csvreader])
-    #for col in row[1]:
-            #total += int(col)
-        #print total
-        
-
-    #header = next(csvreader)
-    # Read header  first (skip if there is no header)
-    #BudgetData = []
-   # for each_line in csvreader:
-    #    BudgetData += each_line
-     #   BudgetData = sum(row[1]
-    #print (BudgetData)
-    #BudgetData = 0 
+    # Read through each row of data sum of total months, net avarage, profit / Losses over entire period
    
-    #total = sum(list.index(row[1]))
-    
-#csvreader = csv.reader(csvreader, delimiter =',')
-
-#Total = sum (row[1])
-    #for row in csvreader:
-        #total = sum(row[1]
-    #row[1] = int()    
-    # #total = sum(float(row[1]) for row in csvreader)
-    #numbers = (float(row[1])for row in csvreader)
-#total = 0 
-#for row in csvreader:
- #       _total = row[1]
-  #      _total = float(_total)
-        #_total = 0 
-   #     _total += _total
-
-    #Total = sum(float(row[1]) for row in csvreader)
-    #Total = sum(Total)
-    #f.next()
-    
-    #numbers = (float(row[1])for row in csv.reader(csvreader))
-    #Total = sum(numbers)
-   
-   #for row in csv.reader(csvreader):
-    #Total += float(row[1])
-    #Total = 0
-
-    #list1 = 
-    #print (list1)
-    #for row in csv.reader(csvreader):
-        #print
-        #for row in row[2]:
-            
-        #print(Total)
+    first_row = next(csvreader)
+    previous_net = int(first_row[1])
+    total += int(first_row[1])
+    total_months += 1
+    for row in csvreader:
         
-            #Print Values
+        total += int(row[1])
+        total_months += 1
+        net_change = int(row[1]) - previous_net 
+        previous_net = int(row[1])
+        net_change_list += [net_change]
+        month += [row[0]]
 
-#print(total)
-    #print(Total)
+    # Read through each row of data sum of total net change, with the greatest increase and decrease
+        if net_change > greatest_increase[1]: 
+            greatest_increase[0] = row[0]
+            greatest_increase[1] = net_change
+        if net_change < greatest_decrease[1]: 
+            greatest_decrease[0] = row[0]
+            greatest_decrease[1] = net_change  
+    Net_monthly_average = sum(net_change_list) / len(net_change_list) 
 
-    #for count in range(0,len(Date)
-    
-        #Total_Months = len()
-        #print (len("budget_data.csv"))
+    #print out data collected
 
-        #if header != None:
-           
-        
-            
-            
+    print("Financial Analysis\n"
+ " ----------------------------\n"
+  f"Total Months: {total_months}\n"
+  f"Total: ${total}\n"
+  f"Average  Change: ${Net_monthly_average}\n"
+  f"Greatest Increase in Profits: {greatest_increase[0]} ${greatest_increase[1]}\n"
+  f"Greatest Decrease in Profits: {greatest_decrease[0]} ${greatest_decrease[1]}") 
+      
 
-            #print(csvreader)
-            
-            #print(f"csv Header: {header}")
-            # Read through each row of data  
-            #for row in csvreader:
-                #print(row)
-            
-    
-# set columns data and Profit and losses
-        #Total_Months = int(0)
-        #Total = int(row[1])
-        #Average_change = int(row[2])
-        #Greatest_increase = int(row[3])
-        #Greatest_decrease = int(row[4])
-# Average of the changes in P&L over entire period
-
-    #Greatest increase in profits , Date and Amount entire period
-    #Greatest_increase = Max(budget_data_csv)
-    # Greatest decrease  in losses (date and amount) over entire period
-    #Greatest_decrease = min(budget_data_csv)
-#def average(Greatest_increase, Greatest_decrease):
-    #print(Average_change)
-    #def len(Total_Months):print(Total_Months)
-#def sum (Total):Print(Total = sum(csvpath))
+      
+      
+      
