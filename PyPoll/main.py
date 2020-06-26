@@ -1,7 +1,7 @@
 import os
 import csv
 
-#import file and evaluate data
+#import file and evaluate data, skip header
 csvpath = os.path.join("Resources", "election_data.csv")
 with open(csvpath, newline='') as f:
    
@@ -13,54 +13,56 @@ with open(csvpath, newline='') as f:
     total_votes = 0  
     candidate_names = "0"  
     Percent_each_candidate = 0 
-    total_votes_each = 0  
-
+     
+    Khan = 0
+    Li = 0
+    Correy = 0
+    OTooley = 0
+    max=max
+    
     # identify lists
 
-    voter_id_list = []  
-    candidate_names_list = []  
-    total_per_candidate = ["",0]
-    winner = ["", 9999999999999]
-    previous_net_votes = []
-    Khan = []
-    Correy = []
-    Li = []
-    OTooley = []    
-
+    voter_id_counter = 0  
+    candidate_names_list = ["Khan", "Correy", "Li", "O'Tooley"]    
+    total_per_candidate = [0,0,0,0]
+    winner = []
+    candidate_votes={}
+    Winner = max(total_per_candidate)
     
-    # Read through each row of data sum of total votes, net avarage votes, per candidate
-   
-    first_row = next(csvreader)
-    previous_net_votes = int(first_row[2])
-    total_votes_each = int(first_row[2])
-    total_votes += 1  
+     
+    
+    
+   #For loop to collect votes by candidate hame and vote counts
     for row in csvreader:
         
         
-        total_votes += 0  
-        total_votes_each += int(row[2])
-        total_votes_each = int(row[2]) / candidate_names        
-        previous_net_votes = int(row[2])
-        candidate_names_list += ["total_votes_each"]
+        total_votes += 1  
+        if row[2]=="Khan":
+            total_per_candidate[0]+=1
+        elif row[2]=="Li":
+            total_per_candidate[1]+=1
+        elif row[2]=="Correy":
+            total_per_candidate[2]+=1
+        elif row[2]=="O'Tooley":
+            total_per_candidate[3]+=1
+        
+    
 
-        voter_id_list += [row[0]]
-
-    # Read through each row of data determine % for each candidate determine winner from highest count
-        #if net_change > greatest_increase[1]: 
-         #   greatest_increase[0] = row[0]
-          #  greatest_increase[1] = net_change
-       # if net_change < greatest_decrease[1]: 
-        #    greatest_decrease[0] = row[0]
-         #   greatest_decrease[1] = net_change  
+   
+         #  Total net votes 
     Net_vote_average = sum(total_per_candidate) / len(total_per_candidate) 
 
     #print out data collected
 
-    print("Election Results\n"
- " ----------------------------\n"
-  f"Total Votes: {total_votes}\n"
-  f"Total Votes per candidate: ${total_votes_each}\n"
-  f"Khan: {total_votes_each}\n"
-  f"Correy: {total_votes_each}\n"
-  f"Li: {total_votes_each}\n"
-  f"O'Tooley:{total_votes_each}\n")
+print(f"""     
+Election Results
+----------------------------
+Total Votes: {total_votes}
+----------------------------
+Total Votes per candidate:
+Khan:    ({total_per_candidate[0]})
+Correy:  ({total_per_candidate[2]})
+Li:      ({total_per_candidate[1]})
+O'Tooley:({total_per_candidate[3]})
+---------------------------------------
+The Winner with the hightest count is:({+max(total_per_candidate)})""")

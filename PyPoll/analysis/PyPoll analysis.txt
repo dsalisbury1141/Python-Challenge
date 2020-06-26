@@ -1,2 +1,22 @@
-The PyPoll Challenge I used the base script created for the PyBank to modify since the challenage was simalar.  I took so much time and effort to complete PyBank I hope to complete the PyPoll with a victory.. More to come. 
+The PyPoll Challenge I used the base script created for the PyBank then modified to collect the election data, I was supprised to be able to provide most of the details.  
 
+The winner prints the count only I was unable to also print the name of the winner.  Yet I'm still happy with the output. I learned a lot with this challenage, and thank you to the TA's and my new tutor!  They were all a life saver!!
+
+
+
+GitBash Terminal Output
+
+dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyPoll** (master)
+$ python main.py
+
+Election Results
+----------------------------
+Total Votes: 3521001
+----------------------------
+Total Votes per candidate:
+Khan:    (2218231)
+Correy:  (704200)
+Li:      (492940)
+O'Tooley:(105630)
+---------------------------------------
+The Winner with the hightest count is:(2218231)

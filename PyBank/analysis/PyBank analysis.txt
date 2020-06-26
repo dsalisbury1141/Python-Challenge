@@ -2,7 +2,7 @@ The PyBank Challenge definitely put me out of my comfort zone, I worked on this 
 
 
 
-GitBash Terminal output
+My Export from GitBash
 
 dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyBank** (master)
 $ python main.py
@@ -15,4 +15,3 @@ Greatest Increase in Profits: Feb-2012 $1926159
 Greatest Decrease in Profits: Sep-2013 $-2196167
 
 dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyBank** (master)
-$
