@@ -15,9 +15,4 @@ Average  Change: $-2315.1176470588234
 Greatest Increase in Profits: Feb-2012 $1926159
 Greatest Decrease in Profits: Sep-2013 $-2196167
 
-<<<<<<< HEAD
-dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyBank** (master)
-=======
-dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyBank** (master)
-$
->>>>>>> 250f31faeca4b12ce087a3b2ba0af0216639cbfe
+
