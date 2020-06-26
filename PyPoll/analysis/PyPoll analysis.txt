@@ -1,6 +1,7 @@
 The PyPoll Challenge I used the base script created for the PyBank then modified to collect the election data, I was supprised to be able to provide most of the details.  
 
-The winner prints the count only I was unable to also print the name of the winner.  Yet I'm still happy with the output. I learned a lot with this challenage, and thank you to the TA's and my new tutor!  They were all a life saver!!
+The winner prints the count only I was unable to also print the name of the winner.  Yet I'm still happy with the output. 
+I learned a lot with this challenage, and thank you to the TA's and my new tutor!  They were all a life saver!!
 
 
 
