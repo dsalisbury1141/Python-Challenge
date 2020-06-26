@@ -1,4 +1,5 @@
-The PyBank Challenge definitely put me out of my comfort zone, I worked on this challenge for over a week (30+ hours) and only took baby steps. I signed up for a tutor and  am so glad I did, my tutor helped me out of my ditch and validated I was on the right track but steered me to the winning circle.
+The PyBank Challenge definitely put me out of my comfort zone, I worked on this challenge for over a week (30+ hours) and only took baby steps. 
+I signed up for a tutor and  am so glad I did, my tutor helped me out of my ditch and validated I was on the right track but steered me to the winning circle.
 
 
 
@@ -14,4 +15,9 @@ Average  Change: $-2315.1176470588234
 Greatest Increase in Profits: Feb-2012 $1926159
 Greatest Decrease in Profits: Sep-2013 $-2196167
 
+<<<<<<< HEAD
 dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyBank** (master)
+=======
+dawn@DESKTOP-V1O5R5C MINGW64 ~/DataWork/Python-Challenge/**PyBank** (master)
+$
+>>>>>>> 250f31faeca4b12ce087a3b2ba0af0216639cbfe
