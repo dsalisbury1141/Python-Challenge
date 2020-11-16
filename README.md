@@ -22,7 +22,7 @@ Financial Analysis
 ![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py3.jpg)
 
 My next exercise is using a small rural town modernize its vote counting process. Creating the total number of votes cast, a complete list of candidates who received votes, the percentage of votes each candidate won, the total number of votes each candidate won, and the winner of the election based on popular vote.
-
+![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py2.jpg)
 ### PyPoll
 python main.py
 
@@ -38,4 +38,4 @@ Total Votes: 3521001
 ---------------------------------------
 <li>The Winner with the hightest count is:(2218231)</li>
 ![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py2.jpg)
-<ul>   </ul>
+
