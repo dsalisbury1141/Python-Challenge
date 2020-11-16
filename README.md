@@ -2,26 +2,21 @@
 ![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py1.jpg)
 
 My first python coding exercise is to analyzes the records to calculate each of the following:
-
-  * The total number of months included in the dataset
-
-  * The net total amount of "Profit/Losses" over the entire period
-
-  * The average of the changes in "Profit/Losses" over the entire period
-
-  * The greatest increase in profits (date and amount) over the entire period
-
-  * The greatest decrease in losses (date and amount) over the entire period
+The total number of months included in the dataset
+The net total amount of "Profit/Losses" over the entire period
+The average of the changes in "Profit/Losses" over the entire period
+The greatest increase in profits (date and amount) over the entire period
+The greatest decrease in losses (date and amount) over the entire period
 
 ## PyBank
 python main.py
 Financial Analysis
  ----------------------------
--Total Months: 86
--Total: $38382578
--Average  Change: $-2315.1176470588234
--Greatest Increase in Profits: Feb-2012 $1926159
--Greatest Decrease in Profits: Sep-2013 $-2196167
+<li>Total Months: 86</li>
+<li>Total: $38382578</li>
+<li>Average  Change: $-2315.1176470588234</li>
+<li>Greatest Increase in Profits: Feb-2012 $1926159</li>
+<li>Greatest Decrease in Profits: Sep-2013 $-2196167</li>
 
 
 PyPoll exercise is using a small, rural town modernize its vote counting process.
