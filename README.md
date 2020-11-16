@@ -1,5 +1,6 @@
 # Python - Py Me Up, Charlie
 ![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py1.jpg)
+
 My first python coding exercise is to analyzes the records to calculate each of the following:
 
   * The total number of months included in the dataset
@@ -16,11 +17,11 @@ My first python coding exercise is to analyzes the records to calculate each of 
 python main.py
 Financial Analysis
  ----------------------------
-Total Months: 86
-Total: $38382578
-Average  Change: $-2315.1176470588234
-Greatest Increase in Profits: Feb-2012 $1926159
-Greatest Decrease in Profits: Sep-2013 $-2196167
+-Total Months: 86
+-Total: $38382578
+-Average  Change: $-2315.1176470588234
+-Greatest Increase in Profits: Feb-2012 $1926159
+-Greatest Decrease in Profits: Sep-2013 $-2196167
 
 
 PyPoll exercise is using a small, rural town modernize its vote counting process.
