@@ -19,6 +19,7 @@ Financial Analysis
 <li>Greatest Increase in Profits: Feb-2012 $1926159</li>
 <li>Greatest Decrease in Profits: Sep-2013 $-2196167</li>
 
+![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py3.jpg)
 
 My next exercise is using a small rural town modernize its vote counting process. Creating the total number of votes cast, a complete list of candidates who received votes, the percentage of votes each candidate won, the total number of votes each candidate won, and the winner of the election based on popular vote.
 
