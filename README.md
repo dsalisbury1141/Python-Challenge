@@ -35,6 +35,7 @@ Total Votes: 3521001
 <li>Li:      (492940)</li>
 <li>O'Tooley:(105630)</li>
 ---------------------------------------
-<li>The Winner with the hightest count is:(2218231</li>
+<li>The Winner with the hightest count is:(2218231)</li>
 
+<ul>   </ul>
 ![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py3.jpg)
