@@ -13,7 +13,7 @@ My first python coding exercise is to analyzes the records to calculate each of 
   * The greatest decrease in losses (date and amount) over the entire period
 
 ## PyBank
-# $ python main.py
+python main.py
 Financial Analysis
  ----------------------------
 Total Months: 86
@@ -37,8 +37,8 @@ PyPoll exercise is using a small, rural town modernize its vote counting process
 
   * The winner of the election based on popular vote.
 
-#### PyPoll
-$ python main.py
+### PyPoll
+python main.py
 
 Election Results
 ----------------------------
