@@ -1,6 +1,6 @@
 # Python - Py Me Up, Charlie
-
-My first python coding solutions is to analyzes the records to calculate each of the following:
+![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py1.jpg)
+My first python coding exercise is to analyzes the records to calculate each of the following:
 
   * The total number of months included in the dataset
 
@@ -12,8 +12,8 @@ My first python coding solutions is to analyzes the records to calculate each of
 
   * The greatest decrease in losses (date and amount) over the entire period
 
-### PyBank
-$ python main.py
+## PyBank
+# $ python main.py
 Financial Analysis
  ----------------------------
 Total Months: 86
@@ -52,3 +52,4 @@ O'Tooley:(105630)
 ---------------------------------------
 The Winner with the hightest count is:(2218231)
 
+![imageAlt](https://github.com/dsalisbury1141/Python-Challenge/blob/master/images/py3.jpg)
